@@ -23,3 +23,24 @@ To:
 - Pandas
 - Scikit-learn
 - Joblib
+
+## Pipeline Steps
+
+- **Data Loading** – Read the Telco dataset from CSV.
+- **Data Cleaning** – Handle missing values and convert data types.
+- **Feature Engineering** – Split features and target, separate categorical and numerical columns.
+- **Preprocessing** – Use `ColumnTransformer` with `StandardScaler` and `OneHotEncoder`.
+- **Model Building** – Train Logistic Regression and Random Forest using `Pipeline`.
+- **Model Tuning** – Use `GridSearchCV` for hyperparameter optimization.
+- **Evaluation** – Use `classification_report` to assess accuracy, precision, recall, F1-score.
+- **Model Export** – Save best-performing models using `joblib`.
+
+## Evaluation Metric
+
+Each model is evaluated using:
+
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-score**
+
